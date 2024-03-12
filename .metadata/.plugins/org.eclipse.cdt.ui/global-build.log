@@ -1,14 +1,75 @@
-21:56:58 **** Incremental Build of configuration Debug for project GPIO ****
+22:01:48 **** Incremental Build of configuration Debug for project SysTick ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32_FromScratch\MARZO-2024\GPIO\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: GPIO.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/button" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/delay" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/button" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/delay" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:67:25: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   67 |                         printf("button on press");
+      |                         ^~~~~~
+../Core/Src/main.c:29:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   28 | #include "button.h"
+  +++ |+#include <stdio.h>
+   29 | /*Defines --------------------------------------------------------------------*/
+../Core/Src/main.c:67:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   67 |                         printf("button on press");
+      |                         ^~~~~~
+../Core/Src/main.c:67:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:70:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   70 |                         printf("button press time is upper to 3 sec.");
+      |                         ^~~~~~
+../Core/Src/main.c:70:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:72:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   72 |                         printf("button on release");
+      |                         ^~~~~~
+../Core/Src/main.c:72:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\ARM_Marzo2024\SysTick\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SysTick.elf
  
-arm-none-eabi-size  GPIO.elf 
-arm-none-eabi-objdump -h -S GPIO.elf  > "GPIO.list"
+arm-none-eabi-size  SysTick.elf 
+arm-none-eabi-objdump -h -S SysTick.elf  > "SysTick.list"
    text	   data	    bss	    dec	    hex	filename
-   1308	      8	   1568	   2884	    b44	GPIO.elf
+   6952	    104	   1984	   9040	   2350	SysTick.elf
 Finished building: default.size.stdout
  
-Finished building: GPIO.list
+Finished building: SysTick.list
+ 
+22:01:55 **** Incremental Build of configuration Debug for project SysTick ****
+make -j8 all 
+arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\ARM_Marzo2024\SysTick\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SysTick.elf
+ 
+arm-none-eabi-size  SysTick.elf 
+arm-none-eabi-objdump -h -S SysTick.elf  > "SysTick.list"
+   text	   data	    bss	    dec	    hex	filename
+   6952	    104	   1984	   9040	   2350	SysTick.elf
+Finished building: default.size.stdout
+ 
+Finished building: SysTick.list
+ 
+22:05:33 **** Incremental Build of configuration Debug for project SysTick ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/button" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/delay" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\ARM_Marzo2024\SysTick\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SysTick.elf
+ 
+arm-none-eabi-size  SysTick.elf 
+arm-none-eabi-objdump -h -S SysTick.elf  > "SysTick.list"
+   text	   data	    bss	    dec	    hex	filename
+   6952	    104	   1984	   9040	   2350	SysTick.elf
+Finished building: default.size.stdout
+ 
+Finished building: SysTick.list
+ 
+22:08:38 **** Incremental Build of configuration Debug for project SysTick ****
+make -j8 all 
+arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\ARM_Marzo2024\SysTick\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SysTick.elf
+ 
+arm-none-eabi-size  SysTick.elf 
+arm-none-eabi-objdump -h -S SysTick.elf  > "SysTick.list"
+   text	   data	    bss	    dec	    hex	filename
+   6952	    104	   1984	   9040	   2350	SysTick.elf
+Finished building: default.size.stdout
+ 
+Finished building: SysTick.list
  
