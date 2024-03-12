@@ -1,0 +1,17 @@
+21:56:58 **** Incremental Build of configuration Debug for project GPIO ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32_FromScratch/MARZO-2024/GPIO/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32_FromScratch\MARZO-2024\GPIO\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-size  GPIO.elf 
+arm-none-eabi-objdump -h -S GPIO.elf  > "GPIO.list"
+   text	   data	    bss	    dec	    hex	filename
+   1308	      8	   1568	   2884	    b44	GPIO.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO.list
+ 
+
+21:56:59 Build Finished. 0 errors, 0 warnings. (took 1s.602ms)
+

@@ -1,0 +1,5 @@
+DeviceConfigurationTool..FirmwareRepositoryPath=D\:\\STM32Cube\\Repository
+DeviceConfigurationTool..UpdaterCheckInterval=30
+DeviceConfigurationTool..UpdaterDataRefresh=dataRefreshDataOnly
+DeviceConfigurationTool..UpdaterDataRefreshInterfval=30
+eclipse.preferences.version=1
