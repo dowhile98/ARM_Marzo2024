@@ -53,6 +53,7 @@ int main(void)
 	 */
 	SystemCoreClockUpdate();
 	SysTick_Config(SystemCoreClock / 1000);
+	NVIC_SetPriority(SysTick_IRQn, 15);
 	/**
 	 * hardware init
 	 */

@@ -16,8 +16,8 @@
 /**
  * Pines donde van conectado la lectura de los contactos
  */
-#define CONTACT1	A, 2
-#define CONTACT2	A, 3
+#define CONTACT1	A, 6
+#define CONTACT2	B, 7
 /**
  * Pines donde van conectados los relays
  */
@@ -41,5 +41,9 @@
  */
 #define STATUS		D, 14
 
-
+/**
+ * CONTACT IT PRIORITY
+ */
+#define CONTACT1_PRI	2
+#define CONTACT2_PRI	3
 #endif /* INC_HVAC_CONFIG_H_ */

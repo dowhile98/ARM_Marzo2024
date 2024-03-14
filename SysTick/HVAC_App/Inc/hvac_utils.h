@@ -76,4 +76,27 @@
 #define GPIOX_IDR_(a, b)      		BITBAND_ACCESS(GPIO ## a ->IDR, b)
 #define GPIOX_IDR(a)          		GPIOX_IDR_(a)
 
+#define PINX_(a, b)					b
+#define PINX(a)						PINX_(a)
+#define PORTX_(a, b)				GPIO ## a
+#define PORTX(a)					PORTX_(a)
+
+
+
+#define GPIOX_PORTNUM_A       1
+#define GPIOX_PORTNUM_B       2
+#define GPIOX_PORTNUM_C       3
+#define GPIOX_PORTNUM_D       4
+#define GPIOX_PORTNUM_E       5
+#define GPIOX_PORTNUM_F       6
+#define GPIOX_PORTNUM_G       7
+#define GPIOX_PORTNUM_H       8
+#define GPIOX_PORTNUM_I       9
+#define GPIOX_PORTNUM_J       10
+#define GPIOX_PORTNUM_K       11
+#define GPIOX_PORTNUM_(a, b)  GPIOX_PORTNUM_ ## a
+#define GPIOX_PORTNUM(a)      GPIOX_PORTNUM_(a)
+
+#define GPIOX_PORTNAME_(a, b) a
+#define GPIOX_PORTNAME(a)     GPIOX_PORTNAME_(a)
 #endif /* INC_HVAC_UTILS_H_ */

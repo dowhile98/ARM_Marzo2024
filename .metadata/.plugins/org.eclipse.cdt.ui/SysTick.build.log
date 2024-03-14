@@ -1,16 +1,17 @@
-22:08:38 **** Incremental Build of configuration Debug for project SysTick ****
+22:13:21 **** Incremental Build of configuration Debug for project SysTick ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F407xx -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/button" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Components/delay" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/HVAC_App/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/SysTick/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
 arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\ARM_Marzo2024\SysTick\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: SysTick.elf
  
 arm-none-eabi-size  SysTick.elf 
 arm-none-eabi-objdump -h -S SysTick.elf  > "SysTick.list"
    text	   data	    bss	    dec	    hex	filename
-   6952	    104	   1984	   9040	   2350	SysTick.elf
+   7412	    104	   1984	   9500	   251c	SysTick.elf
 Finished building: default.size.stdout
  
 Finished building: SysTick.list
  
 
-22:08:39 Build Finished. 0 errors, 0 warnings. (took 1s.185ms)
+22:13:22 Build Finished. 0 errors, 0 warnings. (took 1s.472ms)
 
