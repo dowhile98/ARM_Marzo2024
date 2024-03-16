@@ -1,0 +1,31 @@
+Core/Src/main.o: ../Core/Src/main.c \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/core_cm4.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_version.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_compiler.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_gcc.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/mpu_armv7.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_ll_driver.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_config.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_typedefs.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_utils.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/delay/delay.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/button/button.h \
+ D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/lcd/lcd.h
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/core_cm4.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_version.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_compiler.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/cmsis_gcc.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/mpu_armv7.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_ll_driver.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_config.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_typedefs.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/HVAC_App/Inc/hvac_utils.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/delay/delay.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/button/button.h:
+D:/TRABAJO/UMAKER/CURSOS/ARM\ -\ NUCLEO/ARM_Marzo2024/LCD/Components/lcd/lcd.h:

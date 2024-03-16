@@ -1,0 +1,27 @@
+/*
+ * lcd.h
+ *
+ *  Created on: Mar 15, 2024
+ *      Author: jeffr
+ */
+
+#ifndef LCD_LCD_H_
+#define LCD_LCD_H_
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+/*Includes ------------------------------------------------------*/
+#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* LCD_LCD_H_ */

@@ -1,0 +1,3 @@
+../Components/delay/delay.c:15:6:delay_ms	2
+../Components/delay/delay.c:25:10:getTicks	1
+../Components/delay/delay.c:32:6:ticksUpdate	1
