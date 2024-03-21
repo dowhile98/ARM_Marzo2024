@@ -1,0 +1,17 @@
+../Components/lcd/lcd.c:49:6:lcd_init	24	static
+../Components/lcd/lcd.c:96:6:lcd_clear	16	static
+../Components/lcd/lcd.c:101:6:lcd_puts	24	static
+../Components/lcd/lcd.c:122:6:lcd_displayOn	16	static
+../Components/lcd/lcd.c:127:6:lcd_displayOff	16	static
+../Components/lcd/lcd.c:132:6:lcd_blinkOn	16	static
+../Components/lcd/lcd.c:137:6:lcd_blinkOff	16	static
+../Components/lcd/lcd.c:142:6:lcd_cursorOn	16	static
+../Components/lcd/lcd.c:147:6:lcd_cursorOff	16	static
+../Components/lcd/lcd.c:152:6:lcd_scrollLeft	16	static
+../Components/lcd/lcd.c:155:6:lcd_scrollRight	16	static
+../Components/lcd/lcd.c:159:6:lcd_createChar	32	static
+../Components/lcd/lcd.c:168:6:lcd_putCustom	16	static
+../Components/lcd/lcd.c:173:6:lcd_printf	108	static
+../Components/lcd/lcd.c:187:6:lcd_cmd	16	static
+../Components/lcd/lcd.c:198:13:lcd_data	24	static
+../Components/lcd/lcd.c:206:13:lcd_cursorSet	24	static

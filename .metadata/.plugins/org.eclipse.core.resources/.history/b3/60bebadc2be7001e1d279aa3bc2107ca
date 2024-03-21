@@ -1,0 +1,5 @@
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/USART/Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/USART/Drivers/CMSIS/Include/core_cm4.h:1814:22:__NVIC_SetPriority	2
+../HVAC_App/Src/hvac_ll_driver.c:100:6:hvac_io_init	3
+../HVAC_App/Src/hvac_ll_driver.c:211:6:hvac_uart_init	1
+../HVAC_App/Src/hvac_ll_driver.c:246:6:hvac_lcd_write_nb	3
