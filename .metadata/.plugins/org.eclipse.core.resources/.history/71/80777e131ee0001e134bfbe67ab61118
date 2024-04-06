@@ -1,5 +1,0 @@
-../Components/button/button.c:11:6:button_init	24	static
-../Components/button/button.c:23:6:button_update	32	static
-../Components/button/button.c:71:6:button_on_press	16	static
-../Components/button/button.c:82:6:button_on_release	16	static
-../Components/button/button.c:92:6:button_press_time_is_greater	24	static

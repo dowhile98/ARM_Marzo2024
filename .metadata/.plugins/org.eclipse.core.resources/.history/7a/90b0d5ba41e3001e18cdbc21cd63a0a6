@@ -1,4 +1,0 @@
-D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
-D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/ARM_Marzo2024/LCD/Drivers/CMSIS/Include/core_cm4.h:1814:22:__NVIC_SetPriority	16	static
-../HVAC_App/Src/hvac_ll_driver.c:100:6:hvac_io_init	16	static
-../HVAC_App/Src/hvac_ll_driver.c:196:6:hvac_lcd_write_nb	24	static

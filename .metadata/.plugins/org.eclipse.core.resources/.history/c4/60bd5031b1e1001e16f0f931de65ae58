@@ -1,3 +1,0 @@
-../Components/delay/delay.c:15:6:delay_ms	24	static
-../Components/delay/delay.c:25:10:getTicks	4	static
-../Components/delay/delay.c:32:6:ticksUpdate	16	static

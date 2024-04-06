@@ -8,8 +8,14 @@
 #include "delay.h"
 #include "button.h"
 #include "hvac_ll_driver.h"
+#include <string.h>
+#include <stdlib.h>
+#include "hvac_typedefs.h"
+
+extern usart_rx_data_t rxData;
 extern Button_t sw1;
 extern Button_t sw2;
+extern uint8_t *pointer;
 
 void SysTick_Handler(void){
 	/**
@@ -38,4 +44,30 @@ void HardFault_Handler(void){
 	while(1){
 
 	}
+}
+
+void USART2_IRQHandler(void){
+	static uint8_t i = 0;
+	if(USART2->SR & USART_SR_RXNE){//Byte disponible
+		pointer[i] = USART2->DR;
+		if(pointer[i] == 0xFF){
+			//Consumir el dato
+			memcpy((void *)&rxData, pointer, i + 1);
+			i = 0;
+			hvac_flags |= HVAC_RX_UART_DATA;
+		}else{
+			i += 1;
+		}
+
+	}
+//	if(USART2->SR & USART_SR_IDLE){
+//		USART2->SR &=~ USART_SR_IDLE;
+//		// Ejecutar
+//		if(pointer[i] == 0xFF){
+//			//Consumir el dato
+//			memcpy((void *)&rxData, pointer, i + 1);
+//			i = 0;
+//			hvac_flags |= HVAC_RX_UART_DATA;
+//		}
+//	}
 }

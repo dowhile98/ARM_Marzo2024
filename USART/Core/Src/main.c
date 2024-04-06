@@ -37,6 +37,9 @@
 Button_t sw1;
 Button_t sw2;
 LCD_t display;
+usart_rx_data_t rxData;
+uint8_t *pointer;
+uint8_t rx_buffer[256];
 /*Function prototype ---------------------------------------------------------*/
 /**
  * 1: cuando el boton este presionado
@@ -76,6 +79,10 @@ int main(void)
 	 * UART
 	 */
 	hvac_uart_init(USART2);
+	/**
+	 * recepcion de datos
+	 */
+	pointer = (uint8_t *)rx_buffer;
 
 	printf("HVAC APP Init...\r\n");
 	printf("Comp. V: %s %s\r\n", __DATE__, __TIME__);
@@ -92,7 +99,33 @@ int main(void)
 			lcd_clear(&display);
 			lcd_puts(&display, 0, 0,"button on release");
 		}
-
+		/**
+		 * process data
+		 */
+		if(hvac_flags & HVAC_RX_UART_DATA){
+			hvac_flags &=~ HVAC_RX_UART_DATA;
+			if(rxData.header == 0xAA){
+				printf("rx data: cmd [0x%X]\r\n", rxData.cmd);
+				//Procesar el comando
+				switch(rxData.cmd){
+				case 1:	//led on/off
+					if(rxData.payload[0] == 1){
+						printf("LED on\r\n");
+						GPIOX_ODR(STATUS) = 1;
+					}else{
+						printf("LED off\r\n");
+						GPIOX_ODR(STATUS) = 0;
+					}
+					break;
+				case 2: //get status
+					//send hvac status
+					printf("hvac normal state\r\n");
+					break;
+				default:
+					printf("error command! not found\r\n");
+				}
+			}
+		}
 	}
 }
 
